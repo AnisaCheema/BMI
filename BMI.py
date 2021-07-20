@@ -1,12 +1,18 @@
-Based on the height and weight of person, write a python script that will calculate BMI (Body Mass Index). 
+BMI (Body Mass Index), based on height and weight of a person. 
+user_name = input("Enter your name: ")
+user_age = input("Enter your age: ")
 
-#weight / height * height
-#Print out the BMI to the user
+height = float(input("Enter your Hight in meters: "))
+weight = float(input("Enter your weight in kilos: "))
+  
+bmi = weight / height **2 
 
-# height = 5.3
-# weight = 60
+if bmi < 19.5:
+  print (f " {user_name} you are {user_age} years old. Your body mas is {bmi}. you are underweight. ")
+    
+elif bmi >= 19.5 and bmi <= 26: 
+  print(f " {user_name} you are {user_age} years old. Your body mas is {bmi}.you are healthy. ")
+    
+elif bmi > 26: 
+  print(f " {user_name} you are {user_age} years old. Your body mas is {bmi}. you are overweight. ")
 
-BMI= 60/5.3 *2 
-print(BMI)
-print("x has a BMI", 22.64)
-print(type(BMI))
